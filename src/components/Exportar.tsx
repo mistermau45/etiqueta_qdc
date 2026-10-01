@@ -77,7 +77,7 @@ export default function Exportar({ estado, despachar, avisar }: Props) {
           Seu PDF
         </h2>
         <p className="dica">
-          Etiquetas na medida exata de 17,5 × 12 mm e a tabela de identificação, no mesmo arquivo.
+          Etiquetas na medida exata de 17,5 × 30 mm e a tabela de identificação, no mesmo arquivo.
         </p>
 
         <dl className="resumo">

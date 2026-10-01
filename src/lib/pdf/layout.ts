@@ -10,7 +10,7 @@ export const MARGEM_PADRAO: Record<MargemId, number> = {
   '10mm': 10,
 }
 
-export const ETIQUETA = { largura: 17.5, altura: 12, raio: 1.2 }
+export const ETIQUETA = { largura: 17.5, altura: 30, raio: 1.2 }
 
 export function paraPt(mm: number): number {
   return mm * MM
@@ -88,12 +88,26 @@ function quebrar(texto: string, fonte: Medidor, tamanho: number, larguraMax: num
 
   for (const palavra of palavras) {
     const tentativa = atual ? `${atual} ${palavra}` : palavra
-    if (!atual || fonte.widthOfTextAtSize(tentativa, tamanho) <= larguraMax) {
+    if (fonte.widthOfTextAtSize(tentativa, tamanho) <= larguraMax) {
       atual = tentativa
-    } else {
-      linhas.push(atual)
-      atual = palavra
+      continue
     }
+
+    if (atual) {
+      linhas.push(atual)
+      atual = ''
+    }
+
+    let resto = palavra
+    while (resto.length > 1 && fonte.widthOfTextAtSize(resto, tamanho) > larguraMax) {
+      let corte = resto.length - 1
+      while (corte > 1 && fonte.widthOfTextAtSize(`${resto.slice(0, corte)}-`, tamanho) > larguraMax) {
+        corte -= 1
+      }
+      linhas.push(`${resto.slice(0, corte)}-`)
+      resto = resto.slice(corte)
+    }
+    atual = resto
   }
   if (atual) linhas.push(atual)
   return linhas

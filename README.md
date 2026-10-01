@@ -7,7 +7,7 @@ instalável como PWA (offline).
 ## Funcionalidades
 
 - Lista de circuitos com número, tipo (14 tipos com cor/ícone, incluindo **DR — Diferencial Residual** e **DPS — Proteção contra Surtos**), ambiente e corrente (A).
-- Prévia das etiquetas (padrão do mercado: 17,5 × 12 mm) antes de imprimir.
+- Prévia das etiquetas (padrão do mercado: 17,5 × 30 mm) antes de imprimir.
 - Geração de PDF em folha A4 reformatada: grade de etiquetas + tabela de identificação para a porta do quadro.
 - Margens configuráveis (0 / 5 / 10 mm).
 - Modelos de quadro prontos: 12, 18, 24, 30 e 40 disjuntores de fabricantes comuns (WEG, Schneider, Siemens, GE, etc.).

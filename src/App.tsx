@@ -205,7 +205,7 @@ export default function App() {
             <div className="cabecalho-secao">
               <h1>Veja como vai sair</h1>
               <p>
-                A prévia usa exatamente a geometria do PDF: 17,5 × 12 mm, com a barra colorida, o ícone do circuito e o
+                A prévia usa exatamente a geometria do PDF: 17,5 × 30 mm, com a barra colorida, o ícone do circuito e o
                 ambiente.
               </p>
             </div>

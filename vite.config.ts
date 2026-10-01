@@ -13,7 +13,7 @@ export default defineConfig({
         name: 'Quadro Identificado — etiqueta de quadro elétrico',
         short_name: 'Quadro ID',
         description:
-          'Identifique os circuitos do seu quadro elétrico com etiquetas de 17,5 × 12 mm e tabela em PDF.',
+          'Identifique os circuitos do seu quadro elétrico com etiquetas de 17,5 × 30 mm e tabela em PDF.',
         lang: 'pt-BR',
         start_url: '/',
         scope: '/',

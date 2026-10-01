@@ -29,7 +29,7 @@ export default function Previa({ estado }: Props) {
         <p className="dica">
           {circuitos.length === 0
             ? 'Assim que você cadastrar os circuitos, a faixa aparece aqui.'
-            : `${circuitos.length} etiquetas em ${paginas} ${paginas === 1 ? 'folha' : 'folhas'} A4 de 17,5 × 12 mm.`}
+            : `${circuitos.length} etiquetas em ${paginas} ${paginas === 1 ? 'folha' : 'folhas'} A4 de 17,5 × 30 mm.`}
         </p>
 
         {circuitos.length === 0 ? (
